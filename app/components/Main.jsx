@@ -5,10 +5,10 @@ var Navigation = require('Navigation');
 var Main =  (props) => {
   return (
     <div>
-
+  <Navigation />
 
     <div className="row">
-      <Navigation />
+
       <div className="">{props.children}</div>
 
     </div>

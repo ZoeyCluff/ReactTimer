@@ -17,7 +17,7 @@ return (
   <div className='top-bar-right'>
 
     <ul className='menu'>
-      <li className='menu-text'>Created by <a href='https://www.zoeycluff.com target="_blank"'>Zoey Cluff</a></li>
+      <li className='menu-text'>Created by <a target="_blank" href='https://www.zoeycluff.com '>Zoey Cluff</a></li>
 
     </ul>
   </div>

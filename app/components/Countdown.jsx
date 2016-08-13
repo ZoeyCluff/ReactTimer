@@ -30,6 +30,14 @@ componentDidUpdate: function (prevProps, prevState) {
 
 },
 
+
+
+componentWillUnmount: function () {
+clearInterval(this.timer);
+this.timer = undefined;
+},
+
+
 startTimer: function () {
   this.timer = setInterval( () => {
     var newCount = this.state.count - 1;
@@ -37,6 +45,9 @@ startTimer: function () {
       count: newCount >= 0 ? newCount : 0
     });
 
+    if (newCount === 0) {
+        this.setState({countdownStatus: "stopped"});
+    }
 
   }, 1000);
 },
